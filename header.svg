@@ -1,0 +1,862 @@
+<svg width="1400" height="430" viewBox="0 0 1400 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <!-- Background -->
+
+  <linearGradient id="background" x1="0" y1="0" x2="1400" y2="430" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#050816"/>
+    <stop offset="45%" stop-color="#0A1026"/>
+    <stop offset="100%" stop-color="#190A2E"/>
+  </linearGradient>
+
+  <!-- Neon -->
+
+  <linearGradient id="neonGradient" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00E5FF"/>
+    <stop offset="0.45" stop-color="#6366F1"/>
+    <stop offset="1" stop-color="#FF2DAA"/>
+  </linearGradient>
+
+  <linearGradient id="purpleGradient" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#7C3AED"/>
+    <stop offset="100%" stop-color="#EC4899"/>
+  </linearGradient>
+
+  <!-- Blue glow -->
+
+  <radialGradient id="blueGlow">
+    <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- Pink glow -->
+
+  <radialGradient id="pinkGlow">
+    <stop offset="0%" stop-color="#FF2DAA" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#FF2DAA" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- Grid -->
+
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" stroke="#6070A0" stroke-opacity="0.09"/>
+  </pattern>
+
+  <!-- Glow -->
+
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="softGlow">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+
+</defs>
+
+<!-- ===================================================== -->
+
+<!-- BACKGROUND -->
+
+<!-- ===================================================== -->
+
+<rect width="1400" height="430" rx="28" fill="url(#background)"/>
+
+<rect width="1400" height="430" rx="28" fill="url(#grid)"/>
+
+<!-- Ambient glows -->
+
+<circle cx="170" cy="80" r="210" fill="url(#blueGlow)" filter="url(#softGlow)"/>
+<circle cx="1240" cy="350" r="240" fill="url(#pinkGlow)" filter="url(#softGlow)"/>
+
+<!-- ===================================================== -->
+
+<!-- CYBERPUNK CITY -->
+
+<!-- ===================================================== -->
+
+<g opacity="0.5">
+
+  <!-- Buildings -->
+
+  <rect x="0" y="275" width="90" height="155" fill="#080D20"/>
+  <rect x="100" y="245" width="70" height="185" fill="#0A1025"/>
+  <rect x="182" y="290" width="110" height="140" fill="#080D20"/>
+  <rect x="305" y="225" width="75" height="205" fill="#0B1128"/>
+  <rect x="390" y="270" width="125" height="160" fill="#080D20"/>
+
+  <rect x="1080" y="255" width="90" height="175" fill="#080D20"/>
+  <rect x="1180" y="220" width="70" height="210" fill="#0B1128"/>
+  <rect x="1265" y="275" width="135" height="155" fill="#080D20"/>
+
+  <!-- Windows -->
+
+  <g fill="#00E5FF">
+
+```
+<rect x="20" y="295" width="8" height="4"/>
+<rect x="45" y="320" width="8" height="4"/>
+<rect x="117" y="270" width="8" height="4"/>
+<rect x="140" y="300" width="8" height="4"/>
+<rect x="215" y="315" width="8" height="4"/>
+<rect x="245" y="345" width="8" height="4"/>
+<rect x="330" y="250" width="8" height="4"/>
+<rect x="350" y="285" width="8" height="4"/>
+```
+
+  </g>
+
+  <g fill="#FF2DAA">
+
+```
+<rect x="1110" y="285" width="8" height="4"/>
+<rect x="1140" y="320" width="8" height="4"/>
+<rect x="1205" y="250" width="8" height="4"/>
+<rect x="1230" y="285" width="8" height="4"/>
+<rect x="1290" y="305" width="8" height="4"/>
+<rect x="1330" y="345" width="8" height="4"/>
+```
+
+  </g>
+
+</g>
+
+<!-- ===================================================== -->
+
+<!-- HOLOGRAM CIRCLES -->
+
+<!-- ===================================================== -->
+
+<ellipse
+cx="1070"
+cy="180"
+rx="290"
+ry="140"
+transform="rotate(-17 1070 180)"
+stroke="#00E5FF"
+stroke-opacity="0.18"
+stroke-width="2"
+/>
+
+<ellipse
+cx="1070"
+cy="180"
+rx="340"
+ry="175"
+transform="rotate(-17 1070 180)"
+stroke="#FF2DAA"
+stroke-opacity="0.12"
+stroke-width="2"
+/>
+
+<!-- ===================================================== -->
+
+<!-- TERMINAL WINDOW -->
+
+<!-- ===================================================== -->
+
+<g transform="translate(65 56)">
+
+<rect
+ width="410"
+ height="245"
+ rx="18"
+ fill="#060B18"
+ fill-opacity="0.94"
+ stroke="#58A6FF"
+ stroke-opacity="0.35"
+/>
+
+  <!-- top bar -->
+
+<path
+ d="M0 18C0 8 8 0 18 0H392C402 0 410 8 410 18V39H0V18Z"
+ fill="#0D1428"
+/>
+
+  <!-- traffic lights -->
+
+  <circle cx="23" cy="20" r="5" fill="#FF5F56"/>
+  <circle cx="41" cy="20" r="5" fill="#FFBD2E"/>
+  <circle cx="59" cy="20" r="5" fill="#27C93F"/>
+
+<text
+x="82"
+y="24"
+font-family="monospace"
+font-size="12"
+fill="#64748B"
+
+>
+
+```
+ruslan@dev: ~/projects
+```
+
+  </text>
+
+  <!-- code -->
+
+<text x="26" y="74"
+     font-family="monospace"
+     font-size="17"
+     fill="#7DD3FC">
+const </text>
+
+<text x="92" y="74"
+     font-family="monospace"
+     font-size="17"
+     fill="#C084FC">
+developer </text>
+
+<text x="200" y="74"
+     font-family="monospace"
+     font-size="17"
+     fill="#F8FAFC">
+= </text>
+
+<text x="218" y="74"
+     font-family="monospace"
+     font-size="17"
+     fill="#86EFAC">
+{ </text>
+
+<text x="26" y="108"
+     font-family="monospace"
+     font-size="16"
+     fill="#A5B4FC">
+name: </text>
+
+<text x="94" y="108"
+     font-family="monospace"
+     font-size="16"
+     fill="#FDE68A">
+"Ruslan" </text>
+
+<text x="26" y="140"
+     font-family="monospace"
+     font-size="16"
+     fill="#A5B4FC">
+role: </text>
+
+<text x="94" y="140"
+     font-family="monospace"
+     font-size="16"
+     fill="#67E8F9">
+"Full Stack" </text>
+
+<text x="26" y="172"
+     font-family="monospace"
+     font-size="16"
+     fill="#A5B4FC">
+stack: </text>
+
+<text x="94" y="172"
+     font-family="monospace"
+     font-size="16"
+     fill="#FB7185">
+"Node.js" </text>
+
+<text x="26" y="204"
+     font-family="monospace"
+     font-size="16"
+     fill="#A5B4FC">
+database: </text>
+
+<text x="126" y="204"
+     font-family="monospace"
+     font-size="16"
+     fill="#86EFAC">
+"MongoDB" </text>
+
+<text x="26" y="232"
+     font-family="monospace"
+     font-size="16"
+     fill="#86EFAC">
+} </text>
+
+</g>
+
+<!-- ===================================================== -->
+
+<!-- ANIME CYBERPUNK CHARACTER -->
+
+<!-- ===================================================== -->
+
+<g transform="translate(945 50)">
+
+  <!-- neon aura -->
+
+<ellipse
+ cx="170"
+ cy="185"
+ rx="145"
+ ry="180"
+ fill="#7C3AED"
+ opacity="0.15"
+ filter="url(#softGlow)"
+/>
+
+  <!-- hair glow -->
+
+<path
+ d="
+   M168 40
+   C108 34 69 75 69 130
+   C69 165 84 194 110 211
+   L131 176
+   C112 151 115 120 137 98
+   C154 81 177 74 199 81
+   L219 53
+   C204 45 185 41 168 40Z
+ "
+ fill="#8B5CF6"
+ opacity="0.7"
+ filter="url(#glow)"
+/>
+
+  <!-- hair -->
+
+<path
+ d="
+   M168 41
+   C112 35 75 78 75 126
+   C74 164 88 190 113 208
+   L131 176
+   C113 152 117 121 139 99
+   C156 82 179 76 201 82
+   L220 52
+   C204 45 185 41 168 41Z
+ "
+ fill="#15132C"
+ stroke="#8B5CF6"
+ stroke-width="3"
+/>
+
+  <!-- hair strands -->
+
+<path
+ d="M106 90L87 63"
+ stroke="#00E5FF"
+ stroke-width="4"
+ stroke-linecap="round"
+/>
+
+<path
+ d="M123 77L111 47"
+ stroke="#00E5FF"
+ stroke-width="3"
+ stroke-linecap="round"
+/>
+
+<path
+ d="M204 70L223 46"
+ stroke="#FF2DAA"
+ stroke-width="3"
+ stroke-linecap="round"
+/>
+
+  <!-- face -->
+
+<path
+ d="
+   M139 101
+   C126 121 126 157 143 180
+   C157 198 184 204 208 193
+   C232 181 241 151 236 125
+   C231 99 212 83 187 83
+   C166 83 150 90 139 101Z
+ "
+ fill="#F2D3CA"
+/>
+
+  <!-- neck -->
+
+<path
+ d="M171 183L171 214L208 228L216 186"
+ fill="#E8C0B7"
+/>
+
+  <!-- jacket -->
+
+<path
+ d="
+   M95 246
+   C118 218 149 204 174 204
+   C205 204 240 217 271 246
+   L315 365
+   L78 365Z
+ "
+ fill="#0D1424"
+ stroke="#334155"
+ stroke-width="3"
+/>
+
+  <!-- jacket neon -->
+
+<path
+ d="M119 241L154 217L177 296"
+ stroke="#00E5FF"
+ stroke-width="4"
+ filter="url(#glow)"
+/>
+
+<path
+ d="M234 241L205 217L190 296"
+ stroke="#FF2DAA"
+ stroke-width="4"
+ filter="url(#glow)"
+/>
+
+  <!-- hoodie -->
+
+<path
+ d="M150 216L190 250L226 216"
+ fill="#090F21"
+ stroke="#6366F1"
+ stroke-width="2"
+/>
+
+  <!-- headphones -->
+
+<path
+ d="M112 133C106 87 135 54 179 52C226 50 253 83 250 132"
+ fill="none"
+ stroke="#00E5FF"
+ stroke-width="7"
+ stroke-linecap="round"
+/>
+
+  <rect x="104" y="125" width="16" height="49" rx="8" fill="#00E5FF" filter="url(#glow)"/>
+  <rect x="242" y="125" width="16" height="49" rx="8" fill="#FF2DAA" filter="url(#glow)"/>
+
+  <!-- eyes -->
+
+<path
+ d="M151 139L171 137"
+ stroke="#172033"
+ stroke-width="4"
+ stroke-linecap="round"
+/>
+
+<path
+ d="M202 137L222 139"
+ stroke="#172033"
+ stroke-width="4"
+ stroke-linecap="round"
+/>
+
+  <!-- mouth -->
+
+<path
+ d="M177 164C187 170 197 170 207 164"
+ stroke="#9F625B"
+ stroke-width="3"
+ fill="none"
+ stroke-linecap="round"
+/>
+
+  <!-- cyber visor -->
+
+<path
+ d="M143 124H226"
+ stroke="#00E5FF"
+ stroke-opacity="0.3"
+ stroke-width="2"
+/>
+
+<path
+ d="M148 119H172"
+ stroke="#00E5FF"
+ stroke-width="2"
+ opacity="0.65"
+/>
+
+<path
+ d="M201 119H224"
+ stroke="#FF2DAA"
+ stroke-width="2"
+ opacity="0.65"
+/>
+
+</g>
+
+<!-- ===================================================== -->
+
+<!-- HOLOGRAPHIC CODE PANEL -->
+
+<!-- ===================================================== -->
+
+<g transform="translate(1050 100)">
+
+<rect
+ width="260"
+ height="135"
+ rx="14"
+ fill="#050B18"
+ fill-opacity="0.87"
+ stroke="#00E5FF"
+ stroke-opacity="0.45"
+/>
+
+<text
+x="20"
+y="30"
+font-family="monospace"
+font-size="12"
+fill="#64748B"
+
+>
+
+```
+SYSTEM_STATUS
+```
+
+  </text>
+
+<text
+x="20"
+y="58"
+font-family="monospace"
+font-size="15"
+fill="#67E8F9"
+
+>
+
+```
+&gt; NODE_ENV
+```
+
+  </text>
+
+<text
+x="156"
+y="58"
+font-family="monospace"
+font-size="15"
+fill="#86EFAC"
+
+>
+
+```
+production
+```
+
+  </text>
+
+<text
+x="20"
+y="84"
+font-family="monospace"
+font-size="15"
+fill="#C084FC"
+
+>
+
+```
+&gt; STATUS
+```
+
+  </text>
+
+<text
+x="120"
+y="84"
+font-family="monospace"
+font-size="15"
+fill="#86EFAC"
+
+>
+
+```
+ONLINE
+```
+
+  </text>
+
+<text
+x="20"
+y="110"
+font-family="monospace"
+font-size="15"
+fill="#FB7185"
+
+>
+
+```
+&gt; BUILD
+```
+
+  </text>
+
+<text
+x="105"
+y="110"
+font-family="monospace"
+font-size="15"
+fill="#FDE68A"
+
+>
+
+```
+SUCCESS
+```
+
+  </text>
+
+</g>
+
+<!-- ===================================================== -->
+
+<!-- MAIN TITLE -->
+
+<!-- ===================================================== -->
+
+<text
+x="540"
+y="135"
+font-family="Arial, Helvetica, sans-serif"
+font-size="58"
+font-weight="700"
+fill="#FFFFFF"
+letter-spacing="8"
+
+>
+
+RUSLANITS </text>
+
+<text
+x="544"
+y="180"
+font-family="monospace"
+font-size="20"
+font-weight="600"
+fill="#58A6FF"
+letter-spacing="3"
+
+>
+
+FULL STACK DEVELOPER </text>
+
+<text
+x="544"
+y="216"
+font-family="monospace"
+font-size="16"
+fill="#CBD5E1"
+
+>
+
+JavaScript • TypeScript • Node.js • React </text>
+
+<text
+x="544"
+y="244"
+font-family="monospace"
+font-size="16"
+fill="#CBD5E1"
+
+>
+
+MongoDB • PostgreSQL • MySQL </text>
+
+<!-- ===================================================== -->
+
+<!-- NEON DIVIDER -->
+
+<!-- ===================================================== -->
+
+<path
+d="M542 271H970"
+stroke="url(#neonGradient)"
+stroke-width="3"
+filter="url(#glow)"
+/>
+
+<!-- ===================================================== -->
+
+<!-- TECH BADGES -->
+
+<!-- ===================================================== -->
+
+<g>
+
+<rect
+ x="542"
+ y="294"
+ width="132"
+ height="36"
+ rx="18"
+ fill="#091124"
+ stroke="#00E5FF"
+ stroke-opacity="0.5"
+/>
+
+<text
+x="570"
+y="317"
+font-family="monospace"
+font-size="13"
+fill="#67E8F9"
+
+>
+
+```
+JAVASCRIPT
+```
+
+  </text>
+
+<rect
+ x="686"
+ y="294"
+ width="122"
+ height="36"
+ rx="18"
+ fill="#091124"
+ stroke="#6366F1"
+ stroke-opacity="0.5"
+/>
+
+<text
+x="712"
+y="317"
+font-family="monospace"
+font-size="13"
+fill="#C4B5FD"
+
+>
+
+```
+TYPESCRIPT
+```
+
+  </text>
+
+<rect
+ x="820"
+ y="294"
+ width="104"
+ height="36"
+ rx="18"
+ fill="#091124"
+ stroke="#84CC16"
+ stroke-opacity="0.5"
+/>
+
+<text
+x="849"
+y="317"
+font-family="monospace"
+font-size="13"
+fill="#BEF264"
+
+>
+
+```
+NODE.JS
+```
+
+  </text>
+
+</g>
+
+<!-- ===================================================== -->
+
+<!-- BOTTOM TERMINAL -->
+
+<!-- ===================================================== -->
+
+<text
+x="544"
+y="360"
+font-family="monospace"
+font-size="14"
+fill="#64748B"
+
+>
+
+~/RuslanITS </text>
+
+<text
+x="650"
+y="360"
+font-family="monospace"
+font-size="14"
+fill="#58A6FF"
+
+>
+
+$ </text>
+
+<text
+x="672"
+y="360"
+font-family="monospace"
+font-size="14"
+fill="#E2E8F0"
+
+>
+
+npm run build </text>
+
+<text
+x="820"
+y="360"
+font-family="monospace"
+font-size="14"
+fill="#86EFAC"
+
+>
+
+✓ success </text>
+
+<!-- ===================================================== -->
+
+<!-- DECORATIVE PARTICLES -->
+
+<!-- ===================================================== -->
+
+<g fill="#00E5FF">
+
+  <circle cx="520" cy="68" r="3"/>
+  <circle cx="800" cy="73" r="2"/>
+  <circle cx="1000" cy="55" r="3"/>
+  <circle cx="1320" cy="83" r="2"/>
+  <circle cx="1300" cy="320" r="3"/>
+  <circle cx="500" cy="390" r="2"/>
+
+</g>
+
+<g fill="#FF2DAA">
+
+  <circle cx="505" cy="320" r="2"/>
+  <circle cx="970" cy="360" r="3"/>
+  <circle cx="1280" cy="380" r="2"/>
+  <circle cx="830" cy="40" r="3"/>
+
+</g>
+
+<!-- ===================================================== -->
+
+<!-- BORDER -->
+
+<!-- ===================================================== -->
+
+<rect
+x="1.5"
+y="1.5"
+width="1397"
+height="427"
+rx="26.5"
+stroke="url(#neonGradient)"
+stroke-opacity="0.28"
+stroke-width="3"
+/>
+
+</svg>
