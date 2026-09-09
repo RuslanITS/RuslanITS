@@ -65,21 +65,6 @@ alt="Typing animation"
 
 ---
 
-## ⚛️ State Management
-
-<p>
-  <img src="https://skillicons.dev/icons?i=redux" />
-</p>
-
-`useState` · `useReducer` · `useContext`
-
-`Redux` · `Redux Thunk` · `Redux Saga`
-
-`Store` · `Actions` · `Reducers` · `Middleware`
-
-`Local State` · `Global State` · `Async State`
-
----
 
 ## 🧠 JavaScript
 
@@ -113,8 +98,6 @@ alt="Typing animation"
 
 ---
 
-## 📊 GitHub Stats
-
 <div align="center">
 
 <img
@@ -137,7 +120,6 @@ alt="GitHub Profile Details"
 
 ---
 
-## 🔥 GitHub Streak
 
 <div align="center">
 
